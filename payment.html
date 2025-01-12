@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metode Pembayaran</title>
+    <link rel="stylesheet" href="cart.php" />
+  </head>
+  <body>
+    <section class="payment">
+      <h1 class="title">Ringkasan Pembayaran</h1>
+      <form id="paymentForm">
+        <label for="paymentMethod">Pilih Metode Pembayaran:</label>
+        <select name="method" id="paymentMethod" class="box" required>
+          <option value="" disabled selected>Pilih metode pembayaran</option>
+          <option value="cash on delivery">Cash on Delivery</option>
+          <option value="credit card">Kartu Kredit</option>
+          <option value="paytm">Paytm</option>
+          <option value="paypal">PayPal</option>
+        </select>
+        <div class="description" id="methodDescription"></div>
+        <input type="submit" value="Tempatkan Pesanan" name="order" class="btn order-btn" />
+      </form>
+    </section>
+  </body>
+</html>
