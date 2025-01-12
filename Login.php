@@ -1,7 +1,12 @@
 <?php
-    if(isset($post["login"]));
-    $username = $POST["username"];
-    echo $username
+
+    include "service/database.php";
+
+    if(isset($_POST["login"])) {
+        $username = $_POST["username"];
+        $password = $_POST["password"];
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +21,7 @@
     <form action="login.php" method="POST">
         <input type="text" placeholder="username" name="username"/>
         <input type="password" placeholder="password" name="password"/>
-        <button type="Masuk Sekarang"></button>
+        <button type="submit" name="login">masuk sekarang</button>
     </form>
 </body>
 </html>

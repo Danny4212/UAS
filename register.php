@@ -1,3 +1,24 @@
+<?php
+
+    include "service/database.php";
+
+    if(isset($_POST["register"])) {
+        $username = $_POST["username"];
+        $password = $_POST["password"];
+
+        $sql = "INSERT INTO users (username, password) VALUES 
+        ('$username', '$password)";
+
+        if($db->query($sql)) {
+            echo "Mantap, Data berhasil Masuk";
+        } else {
+            echo "Data tidak berhasil masuk";
+        }
+    }
+    
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,10 +28,10 @@
 </head>
 <body>
     <h3>Daftar Akun</h3>
-    <form>
+    <form action="register.php" method="POST">
         <input type="text" placeholder="username" name="username"/>
         <input type="password" placeholder="password" name="password"/>
-        <button type="Daftar Sekarang"></button>
+        <button type="submit" name="register">Daftar sekarang</button>
     </form>
 </body>
 </html>
