@@ -61,4 +61,26 @@ body {
   .btn.order-btn:hover {
     background-color: #3d3d3d;
   }
+
+  .button-group {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 20px; 
+  }
   
+  .button-group .btn {
+    width: 48%; 
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #919191;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button-group .btn:hover {
+    background-color: #3d3d3d;
+  }
