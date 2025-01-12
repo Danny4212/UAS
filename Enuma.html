@@ -8,12 +8,27 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   </head>
   <body>
-    <?php include 'Layout/header.html' ?>
+    <header>
+      <div class="nav container">
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <a href="#" class="logo">Enuma<span>Lens</span></a>
+        <ul class="navbar">
+          <li><a href="#home" class="active" >Home</a></li>
+          <li><a href="#camera">Camera</a></li>
+          <li><a href="#lens">Lens</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="cart.php">Cart</a></li>
+        </ul>
+        <i class="bx bx-search" id="search-icon"></i>
+        <div class="search-box container">
+            <input type="search" name="" id="" placeholder="Cari disini....">
+      </div>
+    </header>
     <section class="home" id="home">
         <div class="home-text">
             <h1>We Rent Any Sony<br>Camera & <span>Lens</span> You Needs</h1>
             <p>Make Your Moment Captured Beautifully<br> Life Through the Lens!</p>
-            <a href="#rent" class="button">Rent Now!</a>
+            <a href="#" class="button">Rent Now!</a>
         </div>
     </section>
 
@@ -28,85 +43,32 @@
             <div class="box">
                 <img src="A7S.png" alt="">
                 <h2>SONY A7S III</h2>
-                <form method="post" action="add_to_cart.php">
-                    <input type="hidden" name="id_produk" value="A7S">
-                    <input type="hidden" name="nama_produk" value="SONY A7S III">
-                    <input type="hidden" name="harga" value="3000"> 
-                    <label for="jumlah">Jumlah:</label>
-                    <input type="number" id="jumlah" name="jumlah" value="1" min="1">
-                    <button type="submit" name="tambah_ke_keranjang">Tambah ke Keranjang</button>
-                </form>
+
             </div>
 
             <div class="box">
                 <img src="A7R.png" alt="">
                 <h2>SONY A7RIV</h2>
-                <form method="post" action="add_to_cart.php">
-                    <input type="hidden" name="id_produk" value="A7R">
-                    <input type="hidden" name="nama_produk" value="SONY A7RIV">
-                    <input type="hidden" name="harga" value="300K"> 
-                    <label for="jumlah">Jumlah:</label>
-                    <input type="number" id="jumlah" name="jumlah" value="1" min="1">
-                    <button type="submit" name="tambah_ke_keranjang">Tambah ke Keranjang</button>
-                </form>
-
-                
             </div>
 
             <div class="box">
                 <img src="A7C.png" alt="">
                 <h2>SONY A7CII</h2>
-                <form method="post" action="add_to_cart.php">
-                    <input type="hidden" name="id_produk" value="A7C">
-                    <input type="hidden" name="nama_produk" value="SONY A7CII">
-                    <input type="hidden" name="harga" value="3000"> 
-                    <label for="jumlah">Jumlah:</label>
-                    <input type="number" id="jumlah" name="jumlah" value="1" min="1">
-                    <button type="submit" name="tambah_ke_keranjang">Tambah ke Keranjang</button>
-                </form>
-
             </div>
 
             <div class="box">
                 <img src="A9.png" alt="">
                 <h2>SONY A9III</h2>
-                <form method="post" action="add_to_cart.php">
-                    <input type="hidden" name="id_produk" value="A9">
-                    <input type="hidden" name="nama_produk" value="SONY A9III">
-                    <input type="hidden" name="harga" value="3000"> 
-                    <label for="jumlah">Jumlah:</label>
-                    <input type="number" id="jumlah" name="jumlah" value="1" min="1">
-                    <button type="submit" name="tambah_ke_keranjang">Tambah ke Keranjang</button>
-                </form>
-
             </div>
 
             <div class="box">
                 <img src="A7IV.png" alt="">
                 <h2>SONY A7IV</h2>
-                <form method="post" action="add_to_cart.php">
-                    <input type="hidden" name="id_produk" value="A7IV">
-                    <input type="hidden" name="nama_produk" value="SONY A7IV">
-                    <input type="hidden" name="harga" value="3000"> 
-                    <label for="jumlah">Jumlah:</label>
-                    <input type="number" id="jumlah" name="jumlah" value="1" min="1">
-                    <button type="submit" name="tambah_ke_keranjang">Tambah ke Keranjang</button>
-                </form>
-
             </div>
 
             <div class="box">
                 <img src="FX3.png" alt="">
                 <h2>SONY FX-3</h2>
-                <form method="post" action="add_to_cart.php">
-                    <input type="hidden" name="id_produk" value="FX3">
-                    <input type="hidden" name="nama_produk" value="SONY FX-3">
-                    <input type="hidden" name="harga" value="3000"> 
-                    <label for="jumlah">Jumlah:</label>
-                    <input type="number" id="jumlah" name="jumlah" value="1" min="1">
-                    <button type="submit" name="tambah_ke_keranjang">Tambah ke Keranjang</button>
-                </form>
-
             </div>
         </div>
     </section>
@@ -157,9 +119,10 @@
             <p>Welcome to EnumaLens a place where passion meets creativity! Founded in 2022, we are a dedicated team of professionals who strive to bring you the best in digital solutions, Photography, Videography and Gear Rent. With a commitment to excellence and a love for Photography, we aim to provide a unique experience that goes beyond expectations.-</p>
             <a href="#" class="button">Learn More</a>
         </div>
+
     </section>
+
+
     <script src="script.js"></script>
-    <?php include 'Layout/footer.html' ?>
   </body>
 </html>
-
