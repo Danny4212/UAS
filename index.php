@@ -1,3 +1,5 @@
+<?php include 'Layout/header.html'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,3 +20,5 @@
     </nav>
 </body>
 </html>
+
+<?php include 'Layout/footer.html'; ?>
