@@ -475,6 +475,7 @@ button[name='add_to_cart']:hover {
   font-size: 1.5em;
   cursor: pointer;
   margin-left: 15px;
+  color: white;
 }
 
 #search-icon {
