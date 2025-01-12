@@ -1,3 +1,5 @@
+<?php include 'Layout/header.html' ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -161,3 +163,5 @@
     <script src="script.js"></script>
   </body>
 </html>
+
+<?php include 'Layout/footer.html' ?>
