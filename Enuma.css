@@ -116,7 +116,7 @@ header {
   min-height: 850px;
   display: flex;
   align-items: center;
-  background: url('Fto baru/tubagus-andri-maulana-sa86EOBzoag-unsplash.jpg');
+  background: url('Fto baru\tubagus-andri-maulana-sa86EOBzoag-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center left;
@@ -172,7 +172,7 @@ header {
 }
 
 .camera {
-  background: url('Fto baru/BG K.png');
+  background: url('Fto baru\BG K.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center left;
