@@ -1,9 +1,3 @@
-<?php
-    if(isset($post["login"]));
-    $username = $POST["username"];
-    echo $username
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,11 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Masuk Akun</h3>
-    <form action="login.php" method="POST">
+    <h3>Daftar Akun</h3>
+    <form>
         <input type="text" placeholder="username" name="username"/>
         <input type="password" placeholder="password" name="password"/>
-        <button type="Masuk Sekarang"></button>
+        <button type="Daftar Sekarang"></button>
     </form>
 </body>
 </html>

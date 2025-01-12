@@ -1,5 +1,3 @@
-<?php include 'Layout/header.html' ?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,6 +8,7 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   </head>
   <body>
+    <?php include 'Layout/header.html' ?>
     <section class="home" id="home">
         <div class="home-text">
             <h1>We Rent Any Sony<br>Camera & <span>Lens</span> You Needs</h1>
@@ -158,10 +157,9 @@
             <p>Welcome to EnumaLens a place where passion meets creativity! Founded in 2022, we are a dedicated team of professionals who strive to bring you the best in digital solutions, Photography, Videography and Gear Rent. With a commitment to excellence and a love for Photography, we aim to provide a unique experience that goes beyond expectations.-</p>
             <a href="#" class="button">Learn More</a>
         </div>
-
     </section>
     <script src="script.js"></script>
+    <?php include 'Layout/footer.html' ?>
   </body>
 </html>
 
-<?php include 'Layout/footer.html' ?>

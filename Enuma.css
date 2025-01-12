@@ -496,3 +496,18 @@ button[name='add_to_cart']:hover {
 .login i {
   margin-right: 5px;
 }
+
+.register {
+  margin-left: 20px;
+}
+
+.register a {
+  text-decoration: none; /* Hilangkan garis bawah */
+  color: #333; /* Warna teks */
+  display: flex; /* Aktifkan flexbox untuk ikon dan teks */
+  align-items: center; /* Sejajarkan ikon dan teks secara vertikal */
+}
+
+.register i {
+  margin-right: 5px;
+}
