@@ -481,3 +481,18 @@ button[name='add_to_cart']:hover {
 #search-icon {
   margin-right: 10px; /* Beri jarak kecil sebelum ikon cart */
 }
+
+.login {
+  margin-left: 20px;
+}
+
+.login a {
+  text-decoration: none; /* Hilangkan garis bawah */
+  color: #333; /* Warna teks */
+  display: flex; /* Aktifkan flexbox untuk ikon dan teks */
+  align-items: center; /* Sejajarkan ikon dan teks secara vertikal */
+}
+
+.login i {
+  margin-right: 5px;
+}
