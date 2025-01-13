@@ -97,7 +97,7 @@
         }
 
         i {
-            color: #ff6b6b;
+            color:rgb(86, 6, 6);
             margin-bottom: 15px;
             display: block;
         }

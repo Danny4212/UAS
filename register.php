@@ -93,7 +93,7 @@
         }
 
         i {
-            color: #ff6b6b;
+            color:rgb(124, 13, 13);
             margin-bottom: 15px;
             display: block;
         }
