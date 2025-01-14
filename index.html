@@ -4,6 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enuma Lens & Camera</title>
+    <style>
+        footer {
+         background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff); /* Gradient background */
+         padding: 30px 20px;
+         text-align: center;
+         color: #fff; /* Warna teks putih */
+         }
+ 
+         #weather {
+         display: inline-flex; /* Menggunakan flexbox */
+         align-items: center; /* Menyelaraskan item secara vertikal */
+         background-color: rgba(0, 0, 0, 0.2); /* Latar belakang semi-transparan */
+         padding: 20px;
+         border-radius: 10px;
+         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+         }
+ 
+         #weather p {
+         margin: 0 10px; /* Memberi jarak antar elemen */
+         font-size: 18px;
+         }
+ 
+         #icon {
+         width: 60px;
+         }
+ 
+         #temperature {
+         font-size: 24px; 
+         font-weight: bold;
+         }
+     </style>
     <link rel="stylesheet" href="Enuma.css" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   </head>
@@ -122,7 +153,30 @@
 
     </section>
 
-    <iframe src="Layout/footer.html" width="800" height="600"></iframe>
+    <footer>
+        <div id="weather">
+            <p>Kota: <span id="city"></span></p>
+            <p>Suhu: <span id="temperature"></span></p>
+            <p>Kondisi: <span id="description"></span></p>
+            <img id="icon" src="" alt="Weather icon">
+        </div>
+    </footer>
+    
+    <script>
+        const apiKey = '4a40ff4c2b577baa5c50fb18be59b4fa'; 
+        const city = 'Denpasar'; 
+
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('city').textContent = data.name;
+                document.getElementById('temperature').textContent = data.main.temp + '°C';
+                document.getElementById('description').textContent = data.weather[0].description;
+                document.getElementById('icon').src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+            })
+            .catch(error => console.error('Error fetching weather data:', error));
+    </script>
+
     <script src="script.js"></script>
   </body>
 </html>
