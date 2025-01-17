@@ -69,7 +69,7 @@ select.box:focus, input.box:focus, textarea.box:focus {
 #codDetails input[type="number"],
 #creditCardDetails input[type="number"],
 #codDetails textarea,
-#creditCardDetails textarea
+#creditCardDetails textarea,
 #codDetails input[type="date"],
 #creditCardDetails input[type="date"],
 #codDetails input[type="tel"],
