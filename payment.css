@@ -1,86 +1,134 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('Fto baru/image.png') no-repeat center center fixed;
-    background-size: cover;
-  }
-  
-  .payment {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .title {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  select.box {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  .description {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .btn.order-btn {
-    display: block;
-    width: 100%;
-    padding: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #ff0000;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .btn.order-btn:hover {
-    background-color: #3d3d3d;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('Fto baru/image.png') no-repeat center center fixed;
+  background-size: cover;
+}
 
-  .button-group {
-    display: flex;
-    justify-content: center; 
-    gap: 10px; 
-    margin-top: 20px; 
-  }
-  
-  .button-group .btn {
-    width: 48%; 
-    padding: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #919191;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .button-group .btn:hover {
-    background-color: #3d3d3d;
-  }
+.payment {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+select.box, input.box, textarea.box {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+select.box:focus, input.box:focus, textarea.box:focus {
+  border-color: #ff0000;
+  outline: none;
+}
+
+#codDetails, #creditCardDetails{
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+#codDetails, #creditCardDetails label {
+  font-size: 16px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#codDetails input[type="text"],
+#creditCardDetails input[type="text"],
+#codDetails input[type="number"],
+#creditCardDetails input[type="number"],
+#codDetails textarea,
+#creditCardDetails textarea
+#codDetails input[type="date"],
+#creditCardDetails input[type="date"],
+#codDetails input[type="tel"],
+#creditCardDetails input[type="tel"] {
+  padding: 12px; 
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; 
+  box-sizing: border-box; 
+  margin-bottom: 15px; 
+  background-color: #f9f9f9; 
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.btn.order-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn.order-btn:hover {
+  background-color: #3d3d3d;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center; 
+  gap: 10px; 
+  margin-top: 20px; 
+}
+
+.button-group .btn {
+  width: 48%; 
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #919191;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-group .btn:hover {
+  background-color: #3d3d3d;
+}
+textarea {
+  resize: none;
+}

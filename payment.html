@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Metode Pembayaran</title>
     <link rel="stylesheet" href="cart.php" />
+    <script defer src="payment.js"></script>
+    <link rel="stylesheet" href="payment.css" />
   </head>
-  <link rel="stylesheet" href="payment.css" />
   <body>
     <section class="payment">
       <h1 class="title">Ringkasan Pembayaran</h1>
@@ -16,9 +17,44 @@
           <option value="" disabled selected>Pilih metode pembayaran</option>
           <option value="cash on delivery">Cash on Delivery</option>
           <option value="credit card">Kartu Kredit</option>
-          <option value="paytm">Paytm</option>
-          <option value="paypal">PayPal</option>
+          <option value="qris">QRIS</option>
         </select>
+        <div id="codDetails" style="display: none;">
+          <label for="recipientName">Nama Penerima:</label>
+          <input type="text" id="recipientName" name="recipientName" class="box" required />
+
+          <label for="phoneNumber">Nomor Telepon:</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" class="box" required />
+
+          <label for="address">Alamat:</label>
+          <textarea id="address" name="address" class="box" rows="3" required></textarea>
+
+          <label for="province">Provinsi:</label>
+          <input type="text" id="province" name="province" class="box" required />
+
+          <label for="city">Kota:</label>
+          <input type="text" id="city" name="city" class="box" required />
+
+          <label for="notes">Catatan Tambahan:</label>
+          <textarea id="notes" name="notes" class="box" rows="3"></textarea>
+        </div>
+        
+        <div id="creditCardDetails" style="display: none;">
+          <label for="cardHolderName">Nama Pemegang Kartu:</label>
+          <input type="text" id="cardHolderName" name="cardHolderName" class="box" required />
+
+          <label for="cardNumber">Nomor Kartu:</label>
+          <input type="text" id="cardNumber" name="cardNumber" class="box" required />
+
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" name="cvv" class="box" required />
+
+          <label for="expiryDate">Tanggal Kedaluwarsa:</label>
+          <input type="month" id="expiryDate" name="expiryDate" class="box" required />
+
+          <label for="cardAddress">Alamat Pemegang Kartu:</label>
+          <textarea id="cardAddress" name="cardAddress" class="box" rows="3" required></textarea>
+        </div>
         <div class="description" id="methodDescription"></div>
         <input type="submit" value="Tempatkan Pesanan" name="order" class="btn order-btn" />
       </form>
