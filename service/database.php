@@ -4,7 +4,7 @@
 $hostname = "localhost";
 $username = "root";
 $password = "";
-$database_name = "buku_tamu";
+$database_name = "shop_db";
 
 $db = mysqli_connect($hostname, $username, $password, $database_name);
 

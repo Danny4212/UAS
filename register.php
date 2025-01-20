@@ -5,7 +5,7 @@
     $register_message ="";
 
     if(isset($_SESSION["is_login"])) {
-        header("location: index.html");
+        header("location: register.php");
     }
 
     if(isset($_POST["register"])) {
@@ -32,35 +32,38 @@
     <title>Document</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
             background: url('http://localhost/UAS/UAS/Fto baru/image.png');
             background-repeat: no-repeat;
             background-size: cover;
-            color: #fff;
+            background-position: center;
+            color: black;
         }
 
         .register-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            backdrop-filter: blur(8px);
-            background: rgba(0, 0, 0, 0.5);
+            background-color: rgb(232, 214, 165);
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(7, 73, 117, 0.23);
+            max-width: 400px;
+            width: 100%;
         }
 
         .register-box {
             padding: 20px;
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(26, 25, 25, 0.2);
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         h3 {
-            margin-bottom: 20px;
+            font-style: bold;
             text-align: center;
+            margin-bottom: 20px;
         }
 
         form {
@@ -93,9 +96,24 @@
         }
 
         i {
-            color:rgb(124, 13, 13);
+            color:rgb(41, 11, 130);
             margin-bottom: 15px;
             display: block;
+        }
+
+        .link {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .link a {
+            color: rgb(2, 41, 29);;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .link a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -109,5 +127,8 @@
                     <input type="password" placeholder="password" name="password"/>
                     <button type="submit" name="register">Daftar sekarang</button>
                 </form>
+                <div class ="link">
+                    <p><a href="login.php">Login Akun</a> | <a href="Cart/login_cart.php">Belanja Sekarang</a></p>
+                </div>
 </body>
 </html>
