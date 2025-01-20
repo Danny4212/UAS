@@ -36,23 +36,25 @@
     <title>Document</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
             background: url('http://localhost/UAS/UAS/Fto baru/image.png');
             background-repeat: no-repeat;
             background-size: cover;
-            color: #fff;
+            background-position: center;
+            color: black;
         }
 
         .login-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            backdrop-filter: blur(8px);
-            background: rgba(0, 0, 0, 0.5);
+            background-color: rgb(232, 214, 165);
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(7, 73, 117, 0.23);
+            max-width: 400px;
+            width: 100%;
         }
 
         .login-box {
@@ -63,8 +65,9 @@
         }
 
         h3 {
-            margin-bottom: 20px;
+            font-style: bold;
             text-align: center;
+            margin-bottom: 20px;
         }
 
         form {
@@ -97,7 +100,7 @@
         }
 
         i {
-            color:rgb(86, 6, 6);
+            color:rgb(41, 11, 130);
             margin-bottom: 15px;
             display: block;
         }

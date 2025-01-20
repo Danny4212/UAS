@@ -128,7 +128,7 @@
                     <button type="submit" name="register">Daftar sekarang</button>
                 </form>
                 <div class ="link">
-                    <p><a href="login.php">Login Akun</a> | <a href="Cart/login_cart.php">Belanja Sekarang</a></p>
+                    <p><a href="login.php">Login Akun</a></p>
                 </div>
 </body>
 </html>
